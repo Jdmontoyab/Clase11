@@ -1,0 +1,42 @@
+.container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 40%;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: purple;
+      
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+
+.box {
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 32px;
+    text-align: center;
+    margin: 3px;
+    background: orange;
+    align-self: flex-start;
+}
+  
+.box:nth-of-type(1) {
+    flex-grow: 2; 
+}
+
+.box:nth-of-type(2) {
+    flex-grow: 1; 
+}
+
+.box:nth-of-type(3) { 
+    flex-grow: 3;
+    align-self: flex-end;
+}
+
+.box:nth-of-type(4) {
+    flex-grow: 2; 
+}
